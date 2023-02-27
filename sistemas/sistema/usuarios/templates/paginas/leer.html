@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+{% block titulo %} Nosotros {% endblock %}
+{% block contenido %} 
+
+
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Apuntes de Trabajo</h1>
+      <p class="lead">Un CRUD realizado por Gabriel Rodriguez. usando DJANGO</p>
+      
+      <p class="lead">
+
+        <p>1.- Se creó el proyecto Sistemas/sistema y la aplicacion usuarios. </p>
+      
+        <p>2.- Se configuró settings de la aplicacion se crearon las rutas y las carga de las vistas</p>
+      
+        <p>3.- Se ensambló una plantilla base a partir de la cual se cargan todas las vistas </p>
+      
+        <p>4.- Se armó el formulario base de lectura y escritura </p>
+      
+        <p>5.- Se generó la estructura de la db Mysql a traves de la migración del modelo de la aplicacion y se ceó la db usando el comando migrate</p>
+      
+        <p>6.- Se utilizo bootstrap para el ensamblaje básico de la maqueta</p>
+      
+        <p>7.- Se escribio una hoja de estilos simple css</p>
+      
+        <p>8.- Se estructuró formulario base para el proceso carga/modificación/eliminación</p>
+      
+
+        <a class="btn btn-primary btn-lg" href="{% url 'usuario' %}" role="button">Comenzar</a>
+      </p>
+    
+    </div>
+  </div> 
+  {% endblock %}

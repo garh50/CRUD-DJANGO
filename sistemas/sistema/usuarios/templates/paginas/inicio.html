@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block titulo %} Inicio {% endblock %}
+{% block contenido %} 
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Bienvenidos a Crud de Usuarios</h1>
+      <p class="lead">Un CRUD realizado por Gabriel Rodriguez. usando DJANGO</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'usuario' %}" role="button">Comenzar</a>
+      </p>
+    
+    </div>
+  </div> {% endblock %}
+
+

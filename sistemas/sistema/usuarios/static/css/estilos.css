@@ -1,0 +1,112 @@
+.usuarios-tabla{ font-size:12px;}
+.menu{ float:right; width:140px;font-size:12px;}
+.wpda-builder-logo_container {
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+}
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+.wpda-builder-logo_container a img {
+    width: auto;
+    opacity: 1;
+    transition: opacity .3s;
+    -webkit-transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0);
+    max-width: 100%;
+    max-height: inherit!important;
+    vertical-align: middle;
+    will-change: opacity;
+    height: 150px;
+    max-height: 150px;
+}
+.header {
+    background-color: #1B2C5D;
+}
+
+
+.footer {
+    background-color: #000;
+    position:relative;
+    bottom:0px;
+}
+
+.header .nav-item a {
+    color:#fff;
+    font-size: 20px;
+}
+
+.footer  a {
+    color:#fff;
+    font-size: 20px;
+}
+
+.footer  a:hover {
+    color:#4436d7;
+    font-size: 20px;
+}
+
+
+
+
+.dropdown-item{
+    color:#000 !important;
+    font-size: 16px;
+}
+
+.dropdown-item:hover{
+    background-color:#95f47f !important;
+    font-size: 16px;
+}
+
+.navbar-toggler{
+    background-color:#fff;
+}
+
+
+
+
+.navbar-nav .nav-link.active {
+    color: red;
+    font-size: 20px;
+}
+
+.menuicons {
+    padding:20px;
+}
+
+.menuicons li a{
+    color:#fff;
+    font-size: 25px;
+    padding:10px;
+}
+.ruta{
+    color:#fff;
+   
+}
+
+h2 {
+    color:grey !important;
+}
+
+.title {
+   padding:30px;
+ }
+
+.col-form-label {  
+    color:grey !important;
+    text-align: right !important;
+}
+
+.menuicons li a:hover{
+    color:red;
+    font-size: 25px;
+    padding:10px;
+}
+
+.label-col-right {text-align:right;}

@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+{% block titulo %} Nosotros {% endblock %}
+{% block contenido %} 
+
+
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Sección de Nosotros </h1>
+      <p class="lead">Un CRUD realizado por Gabriel Rodriguez. usando DJANGO</p>
+      
+      
+      
+      
+      <p class="lead">
+
+        <p>Tengo experiencia en la programación con el Framework Django 4.1.1 y Python y este crud fue realizado completamente por mi con fines de práctica.</p>
+      
+        <p>Me gustaria compartir con ustedes dicha experiencia...</p>
+      
+      
+
+
+        <a class="btn btn-primary btn-lg" href="{% url 'usuario' %}" role="button">Comenzar</a>
+      </p>
+    
+    </div>
+  </div> 
+  {% endblock %}

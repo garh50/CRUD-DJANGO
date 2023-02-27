@@ -1,0 +1,84 @@
+ <form action="" method="POST" enctype="multipart/form-data">
+ 
+  {% csrf_token %}
+
+  <div class="row">
+  {% for campo in formulario %}
+  
+
+      <div class="col-6 label-col-right" >  
+
+           <label for="" class="col-form-label">{{ campo.label }}:</label>
+      </div>  
+
+      <div class="col-6">
+
+            {% if campo.field.widget.input_type == 'file'  and campo.value %}
+                  <img src="{{MEDIA_URL}}/imagenes/{{campo.value}}" width=100 class="" alt="">
+            {% endif  %}
+            
+            {% if campo.label == 'Nacimiento' or campo.label == 'Createdate' %}
+                <!--<p>{{ campo.field.widget.input_type }}</p>-->
+                <input type="date" 
+                value="{{ campo.value | date:'Y-m-d' }}"
+            {% else %}
+                {% if campo.label == 'Email' %}
+                  <input type="email" 
+                  value="{{ campo.value | default:'' }}" 
+                  placeholder="{{ campo.label }}"
+                  required
+                {% else %}
+
+                  <input type="{{ campo.field.widget.input_type }}" 
+                  value="{{ campo.value | default:'' }}" 
+                  placeholder="{{ campo.label }}"
+                {% endif  %}
+
+
+            {% endif  %}
+             
+            class="form-control" 
+            id="" 
+            name="{{ campo.name }}" 
+            
+            aria-describedby="HelpId" >
+     
+         </div>
+
+         <div class="col-12 help-text">{{ campo.errors }}</div>
+
+         <div class="col-12"  style="height:5px;">
+ 
+         </div>
+         
+
+{% endfor %}
+
+<div class="col-12"  style="height:15px;">
+ 
+</div>
+
+
+
+
+  
+<div class="col-12">
+
+  <button type="submit" class="btn btn-success" name="enviar" value="enviar" >Enviar</button>
+
+  <a class="btn btn-primary" href="{% url 'usuario' %}"">Cancelar</a>
+
+  
+</div>
+
+<div class="col-12"  style="height:15px;">
+ 
+</div>
+
+
+  </form>
+  
+</div> 
+        
+         <!--formulario de usuario-->
+        
